@@ -45,4 +45,40 @@ elif age == 17:
 elif age < 17 and age > 0:
 	print("Just too young.")
 
+## when more than one condition can be true and you want to check all conditions, use only if 
+# statements 
+good_pizza = ['mushroom', 'cheese', 'tomato', 'some salt', 'some cream']
+
+if 'some cream' in good_pizza:
+	print("Adding cream.")
+if 'tomato' in good_pizza:
+	print("Something healthy.")
+
+
+
+requested_toppings = ['calamaris', 'zucchini', 'cucumber', 'cheddar', 'marmelade']
+if requested_toppings:
+	for topping in requested_toppings: 
+		print(f"Okay, we add {topping.upper()} to your pizza now.")
+
+bah_toppings = ['marmelade', 'nutella', 'chocolate']
+yummy_toppings = ['cheddar', 'feta', 'mushrooms', 'salami']
+
+topping = 'feta'
+if topping in bah_toppings:
+	print(f"Ough, do you really want {topping.upper()} on your pizza???")
+elif topping in yummy_toppings:
+	print(f"Yes, it's a very wise choice to put {topping.upper()} on your pizza!!!")
+else:
+	print(f"Sorry, but {topping.upper()} is not available.")
+
+
+toppings = ['feta', 'mushrooms', 'salami', 'nutella', 'bread']
+for topping in toppings:
+	if topping in bah_toppings:
+		print(f"Ough, do you really want {topping.upper()} on your pizza???")
+	elif topping in yummy_toppings:
+		print(f"Yes, it's a very wise choice to put {topping.upper()} on your pizza!!!")
+	else:
+		print(f"Sorry, but {topping.upper()} is not available.")
 
