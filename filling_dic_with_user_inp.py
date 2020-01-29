@@ -1,14 +1,14 @@
 responses = {}
 
-polling_active = True
+polling_activivity = True
 
-while polling_active:
+while polling_activivity:
     name = input("What is your name?")
     street = input("In which street do you live?")
     responses[name] = street
     repeat = input("Would you like to continue?")
     if repeat == 'no':
-        polling_active = False
+        polling_activivity = False
 
 print("\nPoll_results:")
 for name, street in responses.items():
@@ -33,15 +33,15 @@ print(f"\nI made you these sandwiches:")
 print(made_sand)
 
 
-polling_active = True
+polling_activivity = True
 responses = {}
-while polling_active:
+while polling_activivity:
     next_place = input("Where would you like to travel next?")
     with_whom = input("Who should come with you?")
     responses[next_place] = with_whom
     more = input("Do you want to be asked more?")
     if more == 'no':
-        polling_active = False
+        polling_activivity = False
         print("That's it for today!")
 
 print("\nDream place results:")
