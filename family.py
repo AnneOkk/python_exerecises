@@ -9,13 +9,15 @@ class Family:
 class Vacation_Plans(Family):
     def __init__(self, mother, father, son, daughter, weeks):
         super().__init__(mother, father, son, daughter, weeks)
-        self.location_= 'Portugal'
+        self.location_= ['Portugal', 'Guatemala', 'Spain']
         self.alternative = ['Stay home and watch a movie', 'go to the sauna', 'Visit some Kaff around Halle',
                                                                               'just drink a nice cup of coffee',
                                                                               'go cruuuising']
     def our_family_plans(self):
-        print("Sometimes, Mama, Papa, Simon & Anne plan holidays together. They have great ideas, like travelling to "
-              "Portugal... ")
+        first = self.location_[0]
+        family_members = ['Mama', 'Papa', 'Simon', 'Anne']
+        print(f"Sometimes, {family_members} plan holidays together. They have great ideas, like travelling to "
+              f"{first}... ")
     def describe_alt_plans(self):
         if self.weeks < 3:
             print("... but we mostly have some nice alternatives to travelling far away, like:")
