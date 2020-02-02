@@ -1,0 +1,8 @@
+Mond
+Sonne
+Sterne
+Planeten
+Mars
+Venus
+Erde
+q

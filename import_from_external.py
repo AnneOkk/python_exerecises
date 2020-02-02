@@ -31,3 +31,6 @@ while draw != winner_list:
     if draw == winner_list:
         print("Yeah, we found a winner!")
 
+## create random data set
+sample(range(20), 7)
+

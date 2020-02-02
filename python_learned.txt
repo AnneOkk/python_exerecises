@@ -1,0 +1,6 @@
+In python, I've learned how to create lists
+In python, I've learned how to create tuples
+In python, I've learned how to work with modules
+In python, I've learned how to work with classes 
+In python, I've learned how to work with functions 
+
