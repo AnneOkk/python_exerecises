@@ -1,0 +1,1 @@
+"def get_stored_fav_num():\n    \"\"\"Get the user's favorite number\"\"\"\n    filename = 'user_number.json'\n    try:\n        with open(filename) as f:\n            fav_nums = json.load(f)\n    except FileNotFoundError:\n        return None\n    else:\n        return(fav_nums)\n        "
